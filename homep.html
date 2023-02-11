@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <style>
             body {
                 background-color: gray;
@@ -8,40 +10,104 @@
 
             nav {
                 float: left;
-                width: 50px;
-                height: 50vh;
-                background-color: black;
+                width: 10%;
+                height: 100vh;
+                position: fixed;
+                overflow: hidden;
+                background-color: rgb(28,27,25);
             }
 
             ul {
-                height: 100%;
-                display:inline-block;
+                max-height: 100%;
+                max-width: 80%;
+                
+                
             }
 
             li {
-                height: 25%;
+                border: 1px solid white;
+                list-style: none;
             }
+
+
+            li img{
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .inactive img {
+                width: 75%;
+            }
+
+            #section {
+                background-color: rgb(53, 52, 48);
+                width: 100%;
+                height: 100vh;
+            }
+
+            #section2 {
+                background-color: rgb((67, 95, 119)13, 145);
+                width: 100%;
+                height: 100vh;
+            }
+
+            h1 {
+                font-size: 160px;
+                color: white;
+                margin-bottom: -40px;
+                font-family: Bahnschrift SemiBold;
+            }
+
+            #section01 {
+                height: 35%;
+            }
+
+            #section02 {
+                position: relative;
+                left: 5%;
+                width: 80%;
+            }
+
+            #logo {
+                height: 30%;
+            }
+
+            #logo img {
+                margin: 20px;
+            }
+            
+            
+            
         </style>
 
     </head>
     <body>
-        Hi
-        <nav>
+        <nav class="sticky-top">
+            <div id="logo"> <img src="E:\wamp64\www\tomsia.png" width="150px"> </div>
             <ul>
-                <li id="home">
-                    Home
+                <li id="home" class="active">
+                    <a href="google.com"> <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\homeicon.png"/> </a>
                 </li>
-                <li id="about">
-                    About
+                <li id="about" class="inactive">
+                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
                 </li>
-                <li id="work">
-                    Work
+                <li id="work" class="inactive">
+                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
                 </li>
-                <li id="contact">
-                    Contact
+                <li id="contact" class="inactive">
+                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
                 </li>
             </ul>
         </nav>
-        hi
+        <div id="section">
+            <div id="section01"></div>
+            <div id="section02">
+                <h1>WELCOME</h1><br>
+                <h1>TO MY DOMAIN...</h1>
+            </div>
+        </div>
+        <div id="section2">
+            Hi
+        </div>
     </body>
 </html>
