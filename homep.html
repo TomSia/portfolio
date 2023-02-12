@@ -19,13 +19,13 @@
 
             ul {
                 max-height: 100%;
-                max-width: 80%;
+                max-width: 90%;
+                margin-left: -5px;
                 
                 
             }
 
             li {
-                border: 1px solid white;
                 list-style: none;
             }
 
@@ -45,8 +45,8 @@
                 height: 100vh;
             }
 
-            #section2 {
-                background-color: rgb((67, 95, 119)13, 145);
+            #aboutme {
+                background-color: rgb(53, 52, 48);
                 width: 100%;
                 height: 100vh;
             }
@@ -66,16 +66,48 @@
                 position: relative;
                 left: 5%;
                 width: 80%;
+                height: 52%;
+            }
+
+            #section03 {
+                position: relative;
+                width: 50%;
+                color: white;
+                text-align: center;
             }
 
             #logo {
-                height: 30%;
+                height: 36%;
             }
 
             #logo img {
                 margin: 20px;
             }
             
+            #DownBtn {
+                width: 60px;
+                height: 60px;
+                background-color: white;
+            }
+
+            .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            }
+
+            .inactive{
+                margin: auto;
+                padding-left: 20%;
+            }
+
+            #linkBtn{
+                width: 100%;
+                height: 100%;
+            }
+                 
+
+       
             
             
         </style>
@@ -84,12 +116,13 @@
     <body>
         <nav class="sticky-top">
             <div id="logo"> <img src="E:\wamp64\www\tomsia.png" width="150px"> </div>
-            <ul>
-                <li id="home" class="active">
-                    <a href="google.com"> <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\homeicon.png"/> </a>
+            <ul >
+                <li id="home" class="inactive">
+                    <a href="google.com"> <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png"> </a>
                 </li>
                 <li id="about" class="inactive">
                     <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
+                    
                 </li>
                 <li id="work" class="inactive">
                     <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
@@ -104,10 +137,22 @@
             <div id="section02">
                 <h1>WELCOME</h1><br>
                 <h1>TO MY DOMAIN...</h1>
+               
+                
             </div>
+            <div id="section03" class="center">
+                <p> YOUR FUTURE WEB DEVELOPER/WEB DESIGNER. </p>
+                <div id="DownBtn" class="center">
+                    <a href="#aboutme"><div id="linkBtn"></div></a>
+
+                </div>
+            </div>
+            
         </div>
-        <div id="section2">
+        <div id="aboutme">
             Hi
         </div>
     </body>
 </html>
+
+<!--https://www.w3schools.com/css/css_align.asp -->
