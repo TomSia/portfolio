@@ -46,9 +46,12 @@
             }
 
             #aboutme {
-                background-color: rgb(53, 52, 48);
-                width: 100%;
-                height: 100vh;
+                background-color: rgb(105, 105, 102);
+                width: 90%;
+                height: 120vh;
+                margin-left: 10%;
+                padding-right: 5%;
+                padding-left: 5%;
             }
 
             h1 {
@@ -87,7 +90,6 @@
             #DownBtn {
                 width: 60px;
                 height: 60px;
-                background-color: white;
             }
 
             .center {
@@ -105,11 +107,106 @@
                 width: 100%;
                 height: 100%;
             }
-                 
 
-       
-            
-            
+            #linkBtn img {
+                width: 60px;
+            }
+
+            #work {
+                height: 100vh;
+                background-color: rgb(166, 172, 172);
+            }
+
+            #contact {
+                height: 100vh;
+                background-color: rgb(216, 211, 211);
+            }
+
+            .gold {
+                color: rgb(210, 191, 31)
+            }
+
+            #aboutme01 {
+                height: 20%;
+                text-align: center;
+                
+            }
+
+            h2 {
+                font-size: 100px;
+                padding-top: 50px;
+            }
+
+            #aboutme02 {
+                height: 15%;
+            }
+
+            #pfp {
+                width: 25%;
+                height: 100%;
+                float: left;
+            }
+
+            #pfp img {
+                border-radius: 100%;
+                width: 180px;
+                height: 180px;
+                margin-left: 30%;
+            }
+
+            #pfptext {
+                float:right;
+                height: 100%;
+                width: 75%;
+                font-size: 17px;
+                font-family: Bahnschrift SemiBold;
+                color: white;
+                padding-right: 80px;
+                padding-top: 20px;
+            }
+
+            #aboutme03 {
+                margin-top: 5%;
+                height: 55%;
+                padding-top: 20px;
+                font-size: 20px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            #skills {
+                float: left;
+                width: 50%;
+                height: 100%;   
+                text-align: center;
+            }
+
+            #education {
+                float: right;
+                width: 50%;
+                height: 100%;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 40px;
+                margin: 40px;
+            }
+
+            #skillli {
+                max-width: 100%;
+                color: white;
+            }
+
+            #skillli li {
+                margin: 10px;
+            }
+
+            .bullet{
+                font: 10px;
+            }
+
+
         </style>
 
     </head>
@@ -117,25 +214,25 @@
         <nav class="sticky-top">
             <div id="logo"> <img src="E:\wamp64\www\tomsia.png" width="150px"> </div>
             <ul >
-                <li id="home" class="inactive">
-                    <a href="google.com"> <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png"> </a>
+                <li id="homenav" class="inactive">
+                    <a href=#section> <img src="homeicon.png"> </a>
                 </li>
-                <li id="about" class="inactive">
-                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
+                <li id="aboutnav" class="inactive">
+                    <a href=#aboutme> <img src="aboutme.png"></a>
                     
                 </li>
-                <li id="work" class="inactive">
-                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
+                <li id="worknav" class="inactive">
+                    <a href=#work ><img src="workicon.png"></a>
                 </li>
-                <li id="contact" class="inactive">
-                    <img src="C:\Users\psiac\OneDrive\Documents\Portfolio\circle.png">
+                <li id="contactnav" class="inactive">
+                    <a href=#contact><img src="contacticon.png"></a>
                 </li>
             </ul>
         </nav>
         <div id="section">
             <div id="section01"></div>
             <div id="section02">
-                <h1>WELCOME</h1><br>
+                <h1 class="gold">WELCOME</h1><br>
                 <h1>TO MY DOMAIN...</h1>
                
                 
@@ -143,13 +240,76 @@
             <div id="section03" class="center">
                 <p> YOUR FUTURE WEB DEVELOPER/WEB DESIGNER. </p>
                 <div id="DownBtn" class="center">
-                    <a href="#aboutme"><div id="linkBtn"></div></a>
+                    <a href="#aboutme"><img src="E:\Portfolio\downbutton.png" width="50px"></div></a>
 
                 </div>
             </div>
             
         </div>
         <div id="aboutme">
+            
+            <div id="aboutme01">
+                <h2 class="gold">YOUR FUTURE WEB DEVELOPER.</h2>
+            </div>
+            <div id="aboutme02">
+                <div id="pfp">
+                    <img src ="website concept.png" alt="pfp"/>
+                </div>
+                <div id="pfptext">
+                    <p class="gold"> Hi my name is Tom,</p>
+                    <p>  I'm 20 years old and pursuing a career in IT, and I've developed a passion for website 
+                        development. In the future, I'd like to work as a project manager or senior full stack developer. I want to 
+                        continue honing my interpersonal communication abilities and gaining professional experience in the IT 
+                        industry and customer service. I've done a lot of customer service work where I interact with customers 
+                        and assist them achieve their objectives. I've also worked alone a lot, so I can affirm the fact that I'm a 
+                        self-motivating individual.</p>
+                </div>
+            </div>
+
+            <div id="aboutme03">
+                <div id="skills">
+                    <h3 class="gold"> &nbsp;&nbsp;SKILLS</h3>
+                    <ul id="skillli">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Software Testing</li>
+                        <li>Office 365</li>
+                        <li>AutoCAD</li>
+                        <li>Web Design</li>
+                        <li>GitHub</li>
+                    </ul>
+
+                </div>
+                <div id="education">
+                    <h3 class="gold">EDUCATION</h3>
+                    <ul id="skillli">
+                        <li>
+                            Python Novice to Pythonista - Aspired Journey - SkillSoft
+                            <ul class="bullet">
+                                <li>Python Novice</li>
+                                <li>Python Apprentice</li>
+                                <li>Python Journeyman</li>
+                                <li>Pythonista</li>
+                            </ul>
+                            
+                        </li>
+                        <li>Front End Web Development Certification</li>
+                        <li>ISQB Certified Tester Foundation Level
+                        </li>
+                        <li>NCEA Level 3, Lincoln Highschool (2020)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+            </div>
+            
+        </div>
+        <div id="work">
+            Hi
+        </div>
+        <div id="contact">
             Hi
         </div>
     </body>
