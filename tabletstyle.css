@@ -86,6 +86,7 @@
     
     #phonenav {
         margin-top: 80px;
+        display: none;
     }
 
     #phonenav a {
