@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link href="styles.css" rel="stylesheet"/>
         <link href="tabletstyle.css" rel="stylesheet"/>
+        <link href="phonestyle.css" rel="stylesheet"/>
     </head>
     <body>
         <nav class="sticky-top">
@@ -23,10 +24,13 @@
                     <a href=#contact><img src="images\contacticon.png" width="40px";></a>
                 </li>
             </ul>
-            <div id="phonenav">
-                <img src = "images\nav.png" width="60px">
-            </div>
+                <a id="icon" href="javascript:void(0);" onclick="myFunction()"><img src = "images\nav.png" width="60px"> </a>
         </nav>
+        <div id="phonenav">
+            <a href="#aboutme">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
         <div id="socials" class="sticky-top">
             <ul id="navsocial">
                 <li>
@@ -60,5 +64,15 @@
             <div id="fill"></div>
             
         </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("phonenav");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
 <!--https://www.w3schools.com/css/css_align.asp -->
 <!-- https://blog.hubspot.com/website/css-fade-in-->
