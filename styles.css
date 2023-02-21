@@ -1,5 +1,6 @@
 @media (min-width: 1000px){
 
+
     @keyframes blackout {
         0% {opacity: 0;}
         100% {opacity: 0;}
@@ -13,6 +14,10 @@
     html {
         scroll-behavior: smooth;
       }
+
+    #phonenav {
+        display: none;
+    }
 
     .fade-in-image {
         animation: blackout 5s;
@@ -162,16 +167,6 @@
 
     #icon {
         display: none;
-    }
-
-    #work {
-        height: 100vh;
-        background-color: rgb(166, 172, 172);
-    }
-    
-    #contact {
-        height: 100vh;
-        background-color: rgb(216, 211, 211);
     }
     
     #aboutme {
@@ -328,7 +323,7 @@
     }
 
     .worku {
-        width: 200px;
+        width: 23%;
         height: 400px;
         border: 2px solid gold;
         float: left;
@@ -359,6 +354,12 @@
         color: white;
     }
 
+    #emailme:hover {
+        border-color: rgb(210, 191, 31);
+        color: rgb(210, 191, 31);
+        cursor: pointer;
+    }
+
     #footer {
         bottom: -100px;
         margin-top: 200px;
@@ -372,9 +373,45 @@
 
 }
 
-@media (max-width: 1700px){
+@media (max-width: 1500px){
+    #aboutme01 {
+        width: 600px;
+    }
+
+    #aboutme02 {
+        width: 600px;
+        height: 800px;
+    }
+
     #skillli{
-        margin-right: 100px;
+        margin-right: 60px;
+    }
+
+    #pfp {
+        right: 50%;
+    }
+
+    #pfptext {
+        margin-top: 40px;
+    }
+
+    #aboutme04 {
+        padding-left: 0px;
+        text-align: left;
+        height: 600px;
+    }
+
+    #aboutme h2 {
+        float: left;
+    }
+
+    #work {
+        width: 700px;
+        height: 800px;
+    }
+
+    #emailme:hover {
+        border-color:rgb(210, 191, 31);
     }
 }
 
@@ -393,5 +430,6 @@
         height: 20%;
         }
 }
+
 
 
