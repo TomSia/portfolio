@@ -1,0 +1,89 @@
+#work {
+    height: 100vh;
+    background-color: rgb(166, 172, 172);
+}
+
+#contact {
+    height: 100vh;
+    background-color: rgb(216, 211, 211);
+}
+
+#aboutme01 {
+    height: 20%;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 100px;
+    padding-top: 50px;
+}
+
+#aboutme02 {
+    height: 15%;
+}
+
+#pfp {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#pfp img {
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    margin-left: 30%;
+}
+
+#pfptext {
+    float:right;
+    height: 100%;
+    width: 75%;
+    font-size: 17px;
+    font-family: Bahnschrift SemiBold;
+    color: white;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+#aboutme03 {
+    margin-top: 5%;
+    height: 55%;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#skills {
+    float: left;
+    width: 50%;
+    height: 100%;   
+    text-align: center;
+}
+
+#education {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 40px;
+}
+
+#skillli {
+    max-width: 100%;
+    color: white;
+}
+
+#skillli li {
+    margin: 10px;
+}
+
+.bullet{
+    font: 10px;
+}
