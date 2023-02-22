@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet"/>
+        <link href="tabletstyle.css" rel="stylesheet"/>
+        <link href="phonestyle.css" rel="stylesheet"/>
+        <link href="aboutme.css" rel="stylesheet"/>
+        <style>
+            body{
+                background-color: red;
+            }
+
+            #cover {
+                background-color: gray;
+                animation: blackout 4s;
+                animation: skadoosh 4s;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: fixed;
+            }
+
+            #openanim {
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                display: flex;
+                padding: 20% 0;
+            }
+
+            #openanim img {
+                animation: fadeIn 3s
+                skadoosh 4s;
+                display:none;
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cover">
+            <div id="openanim">
+                <img src="images/tomsia.png" width="200px">
+            </div>
+        </div>
+    </body>
+</html>
