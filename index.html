@@ -8,11 +8,13 @@
         <link href="aboutme.css" rel="stylesheet"/>
     </head>
     <body>
+        <!--When website is opened an intro animation will play.-->
         <div id="cover">
             <div id="openanim">
                 <img src="images/tomsia.png" width="200px">
             </div>
         </div>
+        <!--Navigational bar which will display on left side-->
         <nav class="sticky-top">
             <div id="logo"> <img src="images\tomsia.png" width="100px"> </div>
             <ul id="navleft">
@@ -32,11 +34,13 @@
             </ul>
                 <a id="icon" href="javascript:void(0);" onclick="myFunction()"><img src = "images\nav.png" width="60px"> </a>
         </nav>
+        <!--Phone Navigation which will only display when zoomed in or on a device-->
         <div id="phonenav">
             <a href="#aboutme">ABOUT</a>
             <a href="#work">WORK</a>
             <a href="#contact">CONTACT</a>
         </div>
+        <!--Social Media links which display in icons on top right of website-->
         <div id="socials" class="sticky-top">
             <ul id="navsocial">
                 <li>
@@ -51,6 +55,7 @@
                 </li>
             </ul>
         </div>
+        <!--Home section of website which is first div to show on website-->
         <div id="section">
             <div id="section01"></div>
             <div id="section02">
@@ -66,7 +71,7 @@
                     <a class="img_hover" href="#aboutme"><img src="images\plusiconhover.png" width="40px"></div></a>
                 </div>
             </div>
-
+        <!--About me section which is after home section-->
         <div id="aboutme">
         
             <div id="aboutme01" class="center reveal">
@@ -133,7 +138,7 @@
                     </li>
                 </ul>
             </div>
-        
+        <!--Work showcase section-->
         <div id="work" class="center reveal">
             <h2 class="gold">WORK</h2>
             <div class="worku" id="work01"> TO BE CONTINUED</div>
@@ -141,13 +146,13 @@
             <div class="worku" id="work03"> TO BE CONTINUED</div>
             <div class="worku" id="work04"> TO BE CONTINUED</div>
         </div>
-
+        <!--Small contact div which is at the end of the page-->
         <div id="contact" class="center reveal">
             <h2 class="gold">CONTACT ME</h2>
             <p>Come and contact me about Jobs, Questions or if you just want to have a chat with me, I'll try my best to respond ASAP.</p>
             <a href="mailto:tomsiadevelopments@gmail.com"><button id="emailme">Say Hello</button></a>
         </div>
-
+        <!--small footer to display who made the website-->
         <div id="footer" class="center reveal">
             <p class="gold">Design and Coded by TomSia</p>
         </div>
@@ -157,6 +162,7 @@
             </div>
     </div>
         <script>
+            //Function which opens phone navigation menu (phonenav)
             function myFunction() {
               var x = document.getElementById("phonenav");
               if (x.style.display === "block") {
@@ -166,13 +172,14 @@
               }
             }
 
+            //delays function skaDoosh from opening for 4 seconds when website is opened
             window.onload = setTimeout(skaDoosh, 4000);
-
+            //function which allows user to interact with website after animation is played
             function skaDoosh() {
                 document.getElementById("cover").style.display = "none";
             }
             
-
+            //this is the scroll animation which happens when user scrolls to new div
             function reveal() {
                 var reveals = document.querySelectorAll(".reveal");
 
@@ -188,12 +195,25 @@
                     }
                 }
             }
-
+            //activates function reveal when website detects a scroll from user
             window.addEventListener("scroll", reveal);
             </script>
-<!--https://www.w3schools.com/css/css_align.asp -->
-<!-- https://blog.hubspot.com/website/css-fade-in-->
-<!--https://www.freecodecamp.org/news/how-to-open-a-link-in-a-new-tab/-->
-<!--https://www.w3docs.com/snippets/css/how-to-change-cursor-on-hover-in-css.html-->
-<!--https://www.w3schools.com/js/js_timing.asp-->
-<!--https://alvarotrigo.com/blog/css-animations-scroll/-->
+<!--https://www.w3schools.com/css/css_align.asp 
+    This was used to create the class .center which allowed me to center most divs and images on the website
+-->
+<!-- https://blog.hubspot.com/website/css-fade-in
+    Helped me create fadeIn animation for introduction and hovering over logo in nav
+-->
+
+<!--https://www.freecodecamp.org/news/how-to-open-a-link-in-a-new-tab/
+    helped me with the user clicking on any of my socials will open a new tab
+-->
+<!--https://www.w3docs.com/snippets/css/how-to-change-cursor-on-hover-in-css.html
+    Helped me create a cursor effect that happens when hovering over a div
+-->
+<!--https://www.w3schools.com/js/js_timing.asp
+    Helped create delay of the skaDoosh function
+-->
+<!--https://alvarotrigo.com/blog/css-animations-scroll/
+    This helped creating the scroll animation when the user is scrolling the div appears
+-->
