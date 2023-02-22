@@ -69,13 +69,13 @@
 
         <div id="aboutme">
         
-            <div id="aboutme01" class="center">
+            <div id="aboutme01" class="center reveal">
                 <div id="nextgoldbar">
                     <h2 class="gold">ABOUT ME</h2>
                 </div>
                 <div  id="goldbar"></div>
             </div>
-            <div id="aboutme02" class="center">
+            <div id="aboutme02" class="center reveal">
                 <div id="pfp">
                     <img src ="images\pfp.jpg" alt="pfp"/>
                     <div id="pfpfilter"></div>
@@ -113,7 +113,7 @@
 
                 </div>
             </div>
-            <div id="aboutme04" class="center">
+            <div id="aboutme04" class="center reveal">
                 <h2 class="gold">EDUCATION</h2>
                 <ul id="skillli3">
                     <li>
@@ -134,7 +134,7 @@
                 </ul>
             </div>
         
-        <div id="work" class="center">
+        <div id="work" class="center reveal">
             <h2 class="gold">WORK</h2>
             <div class="worku" id="work01"></div>
             <div class="worku" id="work02"></div>
@@ -142,13 +142,13 @@
             <div class="worku" id="work04"></div>
         </div>
 
-        <div id="contact" class="center">
+        <div id="contact" class="center reveal">
             <h2 class="gold">CONTACT ME</h2>
             <p>Come and contact me about Jobs, Questions or if you just want to have a chat with me, I'll try my best to respond ASAP.</p>
             <a href="mailto:tomsiadevelopments@gmail.com"><button id="emailme">Say Hello</button></a>
         </div>
 
-        <div id="footer" class="center">
+        <div id="footer" class="center reveal">
             <p class="gold">Design and Coded by TomSia</p>
         </div>
         
@@ -166,11 +166,30 @@
               }
             }
 
-            window.onload = setTimeout(skaDoosh, 4000)
+            window.onload = setTimeout(skaDoosh, 4000);
 
             function skaDoosh() {
                 document.getElementById("cover").style.display = "none";
             }
+            
+
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
             </script>
 <!--https://www.w3schools.com/css/css_align.asp -->
 <!-- https://blog.hubspot.com/website/css-fade-in-->
