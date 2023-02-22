@@ -337,6 +337,9 @@
         height: 400px;
         border: 2px solid gold;
         float: left;
+        color: white;
+        text-align: center;
+        background-color: rgb(53, 52, 48);
     }
 
 
@@ -416,6 +419,23 @@
     .reveal.active{
     transform: translateY(0);
     opacity: 1;
+    }
+
+    #logo img:hover{
+        animation: fadeIn 2s;
+    }
+
+    span {
+        
+        color: rgb(210, 191, 31);
+    }
+
+    span:hover {
+        text-decoration: dotted underline;
+    }
+
+    .worku:hover {
+        transform: scale(1.5);
     }
 }
 
