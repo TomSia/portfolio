@@ -1,7 +1,7 @@
 
 # PORTFOLIO
 
-## Brief of Ptoject
+## Brief of Project
 
 Creating portfolio for Learning People Project 1.
 My portfolio will showcase work I have produced also will give a breif description of myself and showcase my html and css skills.
