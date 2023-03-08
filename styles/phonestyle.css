@@ -14,6 +14,17 @@
         margin: 30px;
     }
 
+    #navtext {
+        float: left;
+        border: yellow 2px solid;
+        width: 100px;
+        height: 40%;
+    }
+
+    .hide {
+        display: none;
+    }
+
     nav {
         float: left;
         width: 100%;
@@ -142,7 +153,15 @@
     }
 
     #pfptext {
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    #skillli {
+        font-size: 20px;
+    }
+
+    #skillli2 {
+        font-size: 20px;
     }
 
     #aboutme04 {
