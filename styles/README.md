@@ -1,7 +1,7 @@
 
 # PORTFOLIO
 
-## Brief of Ptoject
+## Brief of Project
 
 Creating portfolio for Learning People Project 1.
 My portfolio will showcase work I have produced also will give a breif description of myself and showcase my html and css skills.
@@ -17,7 +17,7 @@ Also including my front end development skills such as
 
 My website only contains HTML, CSS, Javsscript and png/jpeg files to display my appropriate use of all.
 
-# # Challenges
+## Challenges
 
 Some challenges I faced were: 
 - Not being able to implement a hover effect on an image and replace the image with another.
