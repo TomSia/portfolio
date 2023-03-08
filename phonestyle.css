@@ -1,0 +1,179 @@
+@media screen and (max-device-width: 480px) {
+    html {
+        scroll-behavior: smooth;
+      }
+    
+    nav ul {
+        display: none;
+    }
+    body {
+        background-color: rgb(53, 52, 48);
+        min-width: 300px;
+        opacity: 1;
+        transition: ease-in-out 1s;
+        margin: 30px;
+    }
+
+    #navtext {
+        float: left;
+        border: yellow 2px solid;
+        width: 100px;
+        height: 40%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    nav {
+        float: left;
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        overflow: hidden;
+        background-color: rgb(53, 52, 48);
+        min-width: 150px;
+        top: 0px;
+        z-index: 99;
+    }
+
+    #fill {
+        background-color: aliceblue;
+        height: 100vh;
+        width: 100%;
+    }
+
+    #logo {
+        width: 50%;
+        float: left;
+        padding: 13px;
+    }
+
+    #logo img {
+        width: 300px;
+    }
+
+    #icon img {
+        width: 150px;
+    }
+
+    #section {
+        padding-top: 10vh;
+    }
+
+    .gold {
+        color: rgb(210, 191, 31)
+    }
+
+    #section {
+        background-color: rgb(53, 52, 48);
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 80px;
+        margin: 0px 0px -20px 0px;
+        color: white;
+        font-family: Bahnschrift SemiBold;
+    }
+
+
+    #section02 {
+        position: relative;
+        padding-left: 20%;
+        width: 80%;
+        height: 25%;
+    }
+
+    #section03 {
+        position: relative;
+        width: 60%;
+        height: 15%;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        font-family: Bahnschrift SemiBold;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        }
+
+    #DownBtn img{
+        width: 80px;
+    }
+
+    #phonenav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 40px;
+        z-index: 99;
+      }
+
+    #icon {
+        float: right;
+        margin: 10px 80px 0px 0px;
+    }
+
+    #phonenav {
+        margin-top: 200px;
+        display: none;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    #pfp {
+        width: 300px;
+        height: 300px;
+    }
+
+    #aboutme01 {
+        margin-top: 200px;
+    }
+
+    #pfp img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #pfpfilter {
+        width: 300px;
+        height: 300px;
+        bottom: 275px;
+    }
+
+    #aboutme02 {
+        height: 1300px;
+    }
+
+    #pfptext {
+        font-size: 30px;
+    }
+
+    #skillli {
+        font-size: 20px;
+    }
+
+    #skillli2 {
+        font-size: 20px;
+    }
+
+    #aboutme04 {
+        height: 800px;
+    }
+
+    #skillli3{
+        font-size: 25px;
+    }
+
+    #contact {
+        height: 400px;
+        font-size: 25px;
+    }
+}
